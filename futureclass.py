@@ -15,7 +15,7 @@ out_name = arcpy.GetParameterAsText(2)
 #создаем бд
 arcpy.CreateFileGDB_management(out_folder_path, out_name)
 
-path = os.path.join(out_folder_path,'my_folder')
+path = os.path.join(out_folder_path,out_name)
 
 #Имя выходного класса пространственных объектов.
 name = arcpy.GetParameterAsText(3)
